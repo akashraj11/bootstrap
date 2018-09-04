@@ -12,111 +12,7 @@
         $black: #161616 !default;
         $primary: #64a19d !default;
         $ar: black;
-        .jumbotron {
-            margin-bottom: 0px;
-        }
-        
-        @media (min-width: 576px) {
-            .jumbotron {
-                margin-bottom: 0px;
-            }
-        }
-        
-        .about-section {
-            padding-top: 10rem;
-            background: linear-gradient(to bottom, $black 0%, #{fade-out($black, .1)} 75%, #{fade-out($black, .2)} 100%);
-            p {
-                margin-bottom: 5rem;
-            }
-        }
-        
-        .btn {
-            box-shadow: 0 .1875rem .1875rem 0 rgba(0, 0, 0, .1) !important;
-            padding: 1.25rem 2rem;
-            font-family: 'Varela Round';
-            font-size: 80%;
-            text-transform: uppercase;
-            letter-spacing: .15rem;
-            border: 0;
-        }
-        
-        .btn-primary {
-            background-color: $primary;
-            &:hover {
-                background-color: darken($primary, 10%);
-            }
-            &:focus {
-                background-color: darken($primary, 10%);
-                color: white;
-            }
-            &:active {
-                background-color: darken($primary, 15%) !important;
-            }
-        }
-        
-        .contact-section {
-            padding: 5rem 0 0;
-            .card {
-                border: 0;
-                border-bottom: 0.25rem solid $primary;
-                h4 {
-                    font-size: 0.8rem;
-                    font-family: 'Varela Round';
-                    text-transform: uppercase;
-                    letter-spacing: 0.15rem;
-                }
-                hr {
-                    border-color: $primary;
-                    border-width: 0.25rem;
-                    width: 3rem;
-                }
-            }
-            .social {
-                margin-top: 5rem;
-                a {
-                    text-align: center;
-                    height: 3rem;
-                    width: 3rem;
-                    background: fade-out($white, 0.9);
-                    border-radius: 100%;
-                    line-height: 3rem;
-                    color: fade-out($white, 0.7);
-                    &:hover {
-                        color: fade-out($white, 0.5);
-                    }
-                    &:active {
-                        color: $white;
-                    }
-                }
-            }
-        }
-        
-        .masthead {
-            position: relative;
-            width: 100%;
-            height: auto;
-            min-height: 35rem;
-            padding: 15rem 0;
-            background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%, #{fade-out($black, .5)} 75%, $black 100%),
-            url('/img/bg-masthead.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: scroll;
-            background-size: cover;
-            h1 {
-                font-family: 'Varela Round';
-                font-size: 2.5rem;
-                line-height: 2.5rem;
-                letter-spacing: 0.8rem;
-                background: -webkit-linear-gradient(fade-out(white, 0.1), fade-out(white, 1));
-                -webkit-text-fill-color: transparent;
-                -webkit-background-clip: text;
-            }
-            h2 {
-                max-width: 20rem;
-                font-size: 1rem;
-            }
-        }
+        /*Navigation */
         
         #mainNav {
             min-height: 56px;
@@ -151,8 +47,6 @@
             }
             .item4 {
                 display: flex;
-                justify-content: center;
-                align-items: center;
             }
             @media (min-width: 992px) {
                 padding-top: 0;
@@ -199,6 +93,72 @@
                 }
             }
         }
+        /*Header */
+        
+        .masthead {
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 35rem;
+            padding: 15rem 0;
+            background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%, #{fade-out($black, .5)} 75%, $black 100%),
+            url('/img/bg-masthead.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            h1 {
+                font-family: 'Varela Round';
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+                letter-spacing: 0.8rem;
+                background: -webkit-linear-gradient(fade-out(white, 0.1), fade-out(white, 1));
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+            h2 {
+                max-width: 20rem;
+                font-size: 1rem;
+            }
+        }
+        /*about */
+        
+        .about-section {
+            padding-top: 10rem;
+            background: linear-gradient(to bottom,
+            $black 0%,
+            #{fade-out($black, .1)} 75%,
+            #{fade-out($black, .2)} 100%);
+            p {
+                margin-bottom: 5rem;
+            }
+        }
+        /*button */
+        
+        .btn {
+            box-shadow: 0 .1875rem .1875rem 0 rgba(0, 0, 0, .1) !important;
+            padding: 1.25rem 2rem;
+            font-family: 'Varela Round';
+            font-size: 80%;
+            text-transform: uppercase;
+            letter-spacing: .15rem;
+            border: 0;
+        }
+        
+        .btn-primary {
+            background-color: $primary;
+            &:hover {
+                background-color: darken($primary, 10%);
+            }
+            &:focus {
+                background-color: darken($primary, 10%);
+                color: white;
+            }
+            &:active {
+                background-color: darken($primary, 15%) !important;
+            }
+        }
+        /*Project */
         
         .projects-section {
             padding: 10rem 0;
@@ -220,6 +180,7 @@
                 font-size: 90%;
             }
         }
+        /*Signup */
         
         .signup-section {
             padding: 10rem 0;
@@ -245,6 +206,44 @@
                 }
             }
         }
+        /*Contact */
+        
+        .contact-section {
+            padding: 5rem 0 0;
+            .card {
+                border: 0;
+                border-bottom: 0.25rem solid $primary;
+                h4 {
+                    font-size: 0.8rem;
+                    font-family: 'Varela Round';
+                    text-transform: uppercase;
+                    letter-spacing: 0.15rem;
+                }
+                hr {
+                    border-color: $primary;
+                    border-width: 0.25rem;
+                    width: 3rem;
+                }
+            }
+            .social {
+                margin-top: 5rem;
+                a {
+                    text-align: center;
+                    height: 3rem;
+                    width: 3rem;
+                    background: fade-out($white, 0.9);
+                    border-radius: 100%;
+                    line-height: 3rem;
+                    color: fade-out($white, 0.7);
+                    &:hover {
+                        color: fade-out($white, 0.5);
+                    }
+                    &:active {
+                        color: $white;
+                    }
+                }
+            }
+        }
         
         body {
             font-family: 'Nunito';
@@ -256,7 +255,6 @@
             &:focus,
             &:hover {
                 text-decoration: none;
-                color: darken($primary, 20%);
             }
         }
         
@@ -268,10 +266,44 @@
             background-color: $primary !important;
         }
         
-        .text-primary {
-            color: $primary !important;
-        }
-        
         footer {
             padding: 5rem 0;
+        }
+        
+        .jumbotron {
+            margin-bottom: 0px;
+        }
+        
+        @mixin transform1($property) {
+            justify-content: $property;
+            align-items: $property;
+        }
+        
+        .item4 {
+            @include transform1(center);
+        }
+        
+        @mixin transform($property) {
+            color: $property;
+        }
+        
+        .text-primary {
+            @include transform($primary);
+        }
+        
+        a {
+            @include transform(darken($primary,
+            20%));
+        }
+        
+        .carouselpara {
+            font-size: 3vh;
+        }
+        
+        .carouselpara2 {
+            color: rgb(0, 0, 0);
+        }
+        
+        .carouselpara3 {
+            color: rgb(0, 0, 0);
         }
