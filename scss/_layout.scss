@@ -53,10 +53,9 @@
                  font-family: 'Varela Round';
                  font-size: 2.5rem;
                  line-height: 2.5rem;
-                 letter-spacing: 0.8rem;
-                 background: -webkit-linear-gradient(fade-out(white, 0.1), fade-out(white, 1));
+                 background: linear-gradient(fade-out(white, 0.1), fade-out(white, 1));
                  -webkit-text-fill-color: transparent;
-                 -webkit-background-clip: text;
+                 background-clip: text;
              }
              h2 {
                  max-width: 20rem;
@@ -159,4 +158,16 @@
          
          .jumbotron {
              margin-bottom: 0px;
+         }
+         
+         .carouselpara {
+             font-size: 3vh;
+         }
+         
+         .carouselpara2 {
+             color: rgb(0, 0, 0);
+         }
+         
+         .carouselpara3 {
+             color: rgb(0, 0, 0);
          }
