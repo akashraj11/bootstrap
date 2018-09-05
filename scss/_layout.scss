@@ -1,76 +1,162 @@
-#mainNav {
-  min-height: 56px;
-  background-color: $white;
-  .navbar-toggler {
-    font-size: 80%;
-    padding: 0.75rem;
-    color: $primary;
-    border: 1px solid $primary;
-    &:focus {
-      outline: none;
-    }
-  }
-  .navbar-brand {
-    color: $black;
-    font-weight: 700;
-    padding: .9rem 0;
-  }
-  .navbar-nav {
-    .nav-item {
-      &:hover {
-        color: fade(white, 80%);
-        outline: none;
-        background-color: transparent;
-      }
-      &:active,
-      &:focus {
-        outline: none;
-        background-color: transparent;
-      }
-    }
-  }
-  @media (min-width: 992px) {
-    padding-top: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
-    .navbar-brand {
-      padding: .5rem 0;
-      color: fade-out($white, .5);
-    }
-    .nav-link {
-      transition: none;
-      padding: 2rem 1.5rem;
-      color: fade-out($white, .5);
-      &:hover {
-        color: fade-out($white, .25);
-      }
-      &:active {
-        color: white;
-      }
-    }
-    &.navbar-shrink {
-      background-color: $white;
-      .navbar-brand {
-        color: $black;
-      }
-      .nav-link {
-        color: $black;
-        padding: 1.5rem 1.5rem 1.25rem;
-        border-bottom: 0.25rem solid transparent;
-        &:hover {
-          color: $primary;
-        }
-        &:active {
-          color: darken($primary, 15%);
-        }
-        &.active {
-          color: $primary;
-          outline: none;
-          border-bottom: 0.25rem solid $primary;
-        }
-      }
-    }
-  }
-}
+         /*Navigation */
+         
+         #mainNav {
+             min-height: 56px;
+             background-color: $white;
+             .navbar-toggler {
+                 font-size: 80%;
+                 padding: 0.75rem;
+                 color: $primary;
+                 border: 1px solid $primary;
+                 &:focus {
+                     outline: none;
+                 }
+             }
+             .navbar-brand {
+                 color: $black;
+                 font-weight: 700;
+                 padding: .9rem 0;
+             }
+             .navbar-nav {
+                 .nav-item {
+                     &:hover {
+                         color: fade(white, 80%);
+                         outline: none;
+                         background-color: transparent;
+                     }
+                     &:active,
+                     &:focus {
+                         outline: none;
+                         background-color: transparent;
+                     }
+                 }
+             }
+             .item4 {
+                 display: flex;
+             }
+         }
+         /*Header */
+         
+         .masthead {
+             position: relative;
+             width: 100%;
+             height: auto;
+             min-height: 35rem;
+             padding: 15rem 0;
+             background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%, #{fade-out($black, .5)} 75%, $black 100%),
+             url('/img/bg-masthead.jpg');
+             background-position: center;
+             background-repeat: no-repeat;
+             background-attachment: scroll;
+             background-size: cover;
+             h1 {
+                 font-family: 'Varela Round';
+                 font-size: 2.5rem;
+                 line-height: 2.5rem;
+                 letter-spacing: 0.8rem;
+                 background: -webkit-linear-gradient(fade-out(white, 0.1), fade-out(white, 1));
+                 -webkit-text-fill-color: transparent;
+                 -webkit-background-clip: text;
+             }
+             h2 {
+                 max-width: 20rem;
+                 font-size: 1rem;
+             }
+         }
+         /*about */
+         
+         .about-section {
+             padding-top: 10rem;
+             background: linear-gradient(to bottom,
+             $black 0%,
+             #{fade-out($black, .1)} 75%,
+             #{fade-out($black, .2)} 100%);
+             p {
+                 margin-bottom: 5rem;
+             }
+         }
+         /*Project */
+         
+         .projects-section {
+             padding: 10rem 0;
+             .featured-text {
+                 padding: 2rem;
+             }
+             .project-text {
+                 padding: 3rem;
+                 font-size: 90%;
+             }
+         }
+         /*Signup */
+         
+         .signup-section {
+             padding: 10rem 0;
+             background: linear-gradient(to bottom,
+             #{fade-out($black, .9)} 0%,
+             #{fade-out($black, .5)} 75%,
+             $black 100%),
+             url('/img/bg-signup.jpg');
+             background-position: center;
+             background-repeat: no-repeat;
+             background-attachment: scroll;
+             background-size: cover;
+             .form-inline {
+                 input {
+                     box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, .1);
+                     padding: 1.25rem 2rem;
+                     height: auto;
+                     font-family: 'Varela Round';
+                     font-size: 80%;
+                     text-transform: uppercase;
+                     letter-spacing: 0.15rem;
+                     border: 0;
+                 }
+             }
+         }
+         /*contact*/
+         
+         .contact-section {
+             padding: 5rem 0 0;
+             .card {
+                 border: 0;
+                 border-bottom: 0.25rem solid $primary;
+                 h4 {
+                     font-size: 0.8rem;
+                     font-family: 'Varela Round';
+                     text-transform: uppercase;
+                     letter-spacing: 0.15rem;
+                 }
+                 hr {
+                     border-color: $primary;
+                     border-width: 0.25rem;
+                     width: 3rem;
+                 }
+             }
+             .social {
+                 margin-top: 5rem;
+                 a {
+                     text-align: center;
+                     height: 3rem;
+                     width: 3rem;
+                     background: fade-out($white, 0.9);
+                     border-radius: 100%;
+                     line-height: 3rem;
+                     color: fade-out($white, 0.7);
+                     &:hover {
+                         color: fade-out($white, 0.5);
+                     }
+                     &:active {
+                         color: $white;
+                     }
+                 }
+             }
+         }
+         /*footer*/
+         
+         footer {
+             padding: 5rem 0;
+         }
+         
+         .jumbotron {
+             margin-bottom: 0px;
+         }
